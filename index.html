@@ -82,6 +82,10 @@
        getEveryNth(n) { 
         return this.ints.filter((_, index) => index % n === 0); 
       }
+
+      getAllReversed() {
+        return [...this.ints].reverse();
+      }
     }
     
 
