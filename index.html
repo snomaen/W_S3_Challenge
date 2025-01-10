@@ -201,6 +201,8 @@
       } 
       
       work() { 
+        console.log('Before work:', this.ants);
+
         if (this.ants.length === 0) { 
           return "No ants here. Did you work them to death?"; 
         } 
