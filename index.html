@@ -201,7 +201,7 @@
       } 
       
       work() { 
-        console.log('Before work:', this.ants);
+        const originalCount = this.ants.length;
 
         if (this.ants.length === 0) { 
           return "No ants here. Did you work them to death?"; 
@@ -211,7 +211,7 @@
           ...ant, health: ant.health - 20 
         })).filter(ant => ant.health > 0); 
           
-          return `${this.ants.length} ants starting work!`; 
+          return `${originalCount} ants starting work!`; 
         } 
         
         feed(name) { 
